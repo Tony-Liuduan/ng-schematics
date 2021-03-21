@@ -309,6 +309,13 @@ ng generate my-lib:my-service --name my-data
 
 作用: 增强用户的初始安装过程, 使用 SchematicContext 来触发安装任务。该任务会借助用户首选的包管理器将该库添加到宿主项目的 package.json 配置文件中，并将其安装到该项目的 node_modules 目录下
 
+让我们可以更方便的添加三方库。库开发者可以在此过程中为用户进行必要的配置。
+在 ng-add 中我们可能要做这些事：
+将添加依赖到 pagkage.json
+配置用户的 app.module.ts
+配置用户的 angular.json
+
+
 ### 1. 创建 ng-add 原理图
 
 ```sh
@@ -363,6 +370,13 @@ npm link dist/my-lib
 ### 5. 安装
 
 ```sh
-## FIXME: ?? 没效果
-ng generate my-lib:ng-add 
+ng add my-lib
+```
+
+## ng-update
+
+> https://zhuanlan.zhihu.com/p/37010676
+
+```sh
+ng update [package name] --to=1.0
 ```

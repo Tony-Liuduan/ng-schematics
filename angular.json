@@ -39,7 +39,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -119,6 +118,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-schematics"
+    }
+  },
+  "defaultProject": "ng-schematics",
+  "cli": {
+    "analytics": "d496e978-4ed0-4be0-9213-f9705ba25190"
+  }
 }
